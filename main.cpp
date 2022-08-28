@@ -14,6 +14,11 @@ int main()
 	HumanBeing u;
 	u.name="xx";
 	u.introduce();
-	return 0;
+	cout<<'\n';
+	HumanBeing *kitchu=new HumanBeing();
+	kitchu->name="tichu";
+	kitchu->introduce();
+	delete kitchu;
+	cout<<'\n';
+		return 0;
 }
-//
