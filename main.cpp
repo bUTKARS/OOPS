@@ -12,6 +12,14 @@ public:
 		name=s;
 		age=a;
 	}
+	~Human()//called destructor
+	{
+		// to delete an object u for Human class you can type delete u;
+		//the following line of code wil be executed before execution
+		cout<<"the object has been destroyed"<<endl;
+
+		
+	}
 
 	void display()
 	{
@@ -20,11 +28,7 @@ public:
 };
 int main()
 {
-	
-	Human tichu("dsfg",22);
-	Human u;//passed with no paramters assigns the default value
-	tichu.display();
-	u.display();
-	return 0;
-	
+	Human *u;
+	u=new Human();
+	delete u;
 }
